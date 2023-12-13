@@ -11,7 +11,7 @@ public class Move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //ReturnObject = ReturnObject.GetComponent<Rotate>().ReturnObject;
     }
 
     // Update is called once per frame
@@ -26,5 +26,6 @@ public class Move : MonoBehaviour
         zPositon = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
         transform.Translate(xPositon, 0, zPositon);
     }
+
 
 }

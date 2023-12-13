@@ -5,12 +5,20 @@ using UnityEngine;
 public class Rotate : MonoBehaviour
 {
     public GameObject Object;
+    public GameObject ReturnObject;
     float yRotate = 1f;
     [SerializeField] float rotateSpeed = 50f;
+    float xFirstRotation;
+    float yFirstRotation;
+    float zFirstRotation;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        xFirstRotation = GetComponent<Transform>().rotation.x;
+        yFirstRotation = GetComponent<Transform>().rotation.y;
+        zFirstRotation = GetComponent<Transform>().rotation.z;
 
     }
 
@@ -18,6 +26,7 @@ public class Rotate : MonoBehaviour
     void Update()
     {
         ToRotate();
+        ReturnObjectRotation();
     }
 
     private void ToRotate()
@@ -31,5 +40,14 @@ public class Rotate : MonoBehaviour
         {
             Object.transform.Rotate(0, yRotate * Time.deltaTime * rotateSpeed, 0);
         }
+    }
+
+    public void ReturnObjectRotation()
+    {
+        if (Input.GetKey(KeyCode.R) == true)
+        {
+            ReturnObject.transform.localEulerAngles = new Vector3(xFirstRotation, yFirstRotation, zFirstRotation);
+        }
+
     }
 }

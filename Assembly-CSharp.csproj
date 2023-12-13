@@ -60,7 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
-    <Compile Include="Assets\Scripts\Object HIt.cs" />
+    <Compile Include="Assets\Scripts\ObjectHit.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

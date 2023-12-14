@@ -23,8 +23,8 @@ public class Approaching : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetTargetPosition();
         time = (int)Time.time;
+        GetTargetPosition();
         ApproachingTarget();
     }
 
@@ -32,8 +32,6 @@ public class Approaching : MonoBehaviour
     {
         if ((time % everyFewSeconds) == 0)
         {
-            Debug.Log("ok");
-
             xTargetPosition = TargetObject.transform.position.x;
             yTargetPosition = TargetObject.transform.position.y;
             zTargetPosition = TargetObject.transform.position.z;

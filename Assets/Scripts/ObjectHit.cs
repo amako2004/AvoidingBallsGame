@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectHit : MonoBehaviour
 {
+    int hitCount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,8 @@ public class ObjectHit : MonoBehaviour
     {
         if (collision.gameObject.tag != "Hit")
         {
-            Debug.Log("Hit");
+            hitCount++;
+            Debug.Log("The number of times you hit" + hitCount);
             collision.gameObject.tag = "Hit";
         }
 

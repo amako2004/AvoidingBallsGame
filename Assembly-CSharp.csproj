@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\ObjectHit.cs" />
+    <Compile Include="Assets\Scripts\Approaching.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

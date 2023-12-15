@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 20232721}
   - component: {fileID: 20232720}
   - component: {fileID: 20232719}
-  - component: {fileID: 20232722}
   m_Layer: 0
   m_Name: Cube(2)
   m_TagString: Guardian
@@ -151,7 +150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20232717}
   m_LocalRotation: {x: -0, y: 0.7071058, z: -0, w: 0.7071078}
-  m_LocalPosition: {x: -1.2299995, y: -0.018000126, z: 0}
+  m_LocalPosition: {x: -1.4, y: -0.018000126, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.049999997}
   m_Children: []
   m_Father: {fileID: 326242087}
@@ -219,18 +218,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20232717}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &20232722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20232717}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 787f60345e9b6c44f83bf6715294f301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &119457793
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +230,6 @@ GameObject:
   - component: {fileID: 119457797}
   - component: {fileID: 119457796}
   - component: {fileID: 119457795}
-  - component: {fileID: 119457798}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Guardian
@@ -259,7 +245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119457793}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.030002594, y: -0.018000126, z: -1.2000008}
+  m_LocalPosition: {x: -0.030002594, y: -0.018000126, z: -1.4}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.05}
   m_Children: []
   m_Father: {fileID: 326242087}
@@ -327,18 +313,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119457793}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &119457798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119457793}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 787f60345e9b6c44f83bf6715294f301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &310386731
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +419,6 @@ GameObject:
   - component: {fileID: 326242087}
   - component: {fileID: 326242088}
   - component: {fileID: 326242090}
-  - component: {fileID: 326242089}
   m_Layer: 0
   m_Name: Cube Owner
   m_TagString: Guardian
@@ -485,19 +458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Object: {fileID: 326242086}
   ReturnObject: {fileID: 326242086}
-  rotateSpeed: 130
---- !u!114 &326242089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326242086}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 787f60345e9b6c44f83bf6715294f301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  rotateSpeed: 200
 --- !u!54 &326242090
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -997,6 +958,7 @@ GameObject:
   - component: {fileID: 1013565532}
   - component: {fileID: 1013565530}
   - component: {fileID: 1013565531}
+  - component: {fileID: 1013565535}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1110,6 +1072,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013565528}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1013565535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013565528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e3723be02b90b49b042f9121b37478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1093168895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,7 +1131,6 @@ GameObject:
   - component: {fileID: 1165376098}
   - component: {fileID: 1165376097}
   - component: {fileID: 1165376096}
-  - component: {fileID: 1165376099}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Guardian
@@ -1173,7 +1146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165376094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.030002594, y: -0.018000126, z: 1.1999989}
+  m_LocalPosition: {x: -0.030002594, y: -0.018000126, z: 1.4}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.05}
   m_Children: []
   m_Father: {fileID: 326242087}
@@ -1241,18 +1214,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165376094}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1165376099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165376094}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 787f60345e9b6c44f83bf6715294f301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1170099395
 GameObject:
   m_ObjectHideFlags: 3
@@ -1380,7 +1341,6 @@ GameObject:
   - component: {fileID: 1426699740}
   - component: {fileID: 1426699739}
   - component: {fileID: 1426699738}
-  - component: {fileID: 1426699741}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Guardian
@@ -1396,7 +1356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426699736}
   m_LocalRotation: {x: -0, y: 0.7071058, z: -0, w: 0.7071078}
-  m_LocalPosition: {x: 1.1699944, y: -0.018000126, z: 0}
+  m_LocalPosition: {x: 1.4, y: -0.018000126, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.049999997}
   m_Children: []
   m_Father: {fileID: 326242087}
@@ -1464,18 +1424,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426699736}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1426699741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426699736}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 787f60345e9b6c44f83bf6715294f301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1720756128
 GameObject:
   m_ObjectHideFlags: 0

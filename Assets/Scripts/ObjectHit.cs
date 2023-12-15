@@ -5,9 +5,7 @@ using UnityEngine;
 public class ObjectHit : MonoBehaviour
 {
     GameObject invisibleObject;
-    int hitCount = 0;
-    int life = 10;
-    int untilGameOver = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,19 +21,13 @@ public class ObjectHit : MonoBehaviour
     {
         if (collision.gameObject.tag == "Guardian")
         {
-
             invisibleObject.SetActive(false);
 
         }
         else if (collision.gameObject.tag == "Player")
         {
             invisibleObject.SetActive(false);
-            hitCount++;
-            untilGameOver = life - hitCount;
-            Debug.Log("untilGameOver-" + untilGameOver);
         }
-
-
 
     }
 

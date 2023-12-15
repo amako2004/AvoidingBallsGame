@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2722982156349973381}
   m_Layer: 0
   m_Name: Pursuers
-  m_TagString: Untagged
+  m_TagString: Pursuer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,9 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1248b1ffe236cb74cb7fa0d85f0f8f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  everyFewSeconds: 1
+  everyFewSeconds: 0.01
   TargetObject: {fileID: 0}
-  speed: 0.005
+  speed: 0.05
 --- !u!114 &2722982156349973381
 MonoBehaviour:
   m_ObjectHideFlags: 0

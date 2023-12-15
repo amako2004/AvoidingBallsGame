@@ -7,10 +7,10 @@ public class Approaching : MonoBehaviour
     float xTargetPosition;
     float yTargetPosition;
     float zTargetPosition;
-    [SerializeField] int everyFewSeconds = 3;
+    [SerializeField] float everyFewSeconds = 3;
     public GameObject TargetObject;
     float time;
-    [SerializeField] float speed = 0.05f;
+    [SerializeField] float speed = 0.01f;
     Vector3 pursuers;
     Vector3 AfterPosition;
 
